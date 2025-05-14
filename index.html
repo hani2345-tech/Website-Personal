@@ -68,12 +68,6 @@
       color: #ffeb3b;
     }
 
-    @media (max-width: 768px) {
-  nav {
-    flex-direction: column;  /* Mengubah layout menjadi kolom */
-    text-align: center; /* Menyusun elemen-elemen dalam nav agar di tengah */
-  }
-
   nav ul {
     display: flex;
     flex-direction: column; /* Menyusun item menu secara vertikal */
@@ -87,7 +81,18 @@
   nav ul li a {
     font-size: 1.2rem; /* Ukuran font yang lebih besar agar mudah dibaca di ponsel */
   }
-}
+
+        @media (max-width: 768px) {
+            .activity-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        @media (max-width: 480px) {
+            .activity-grid {
+                grid-template-columns: 1fr;
+            }
+        }
 
     header {
       background: url(WhatsApp-Image-2021-01-30-at-18.22.59-1100x525.jpeg) center/cover no-repeat fixed;
@@ -418,16 +423,14 @@ h2 {
     <h1>Pondok Pesantren Darul Falah Sukorejo</h1>
     <ul>
       <li><a href="#beranda">Beranda</a></li>
-      <li><a href="#digitalisasi">Digitalisasi</a></li>
-      <li><a href="#bintang Kreasi Santri">Bintang Kreasi Santri</a></li>
+      <li><a href="#digitalisasi">Digitalisasi Pendidikan</a></li>
       <li><a href="#kontak">Kontak</a></li>
     </ul>
   </nav>
 
   <header id="beranda">
     <h1><a href="#digitalisasi" style="color:rgb(246, 249, 252); text-decoration:none;">Selamat Datang di PonPes Darul Falah</a></h1>
-    <p>Pusat pengembangan potensi santri yang mengakselerasi</p>
-    <p>bakat dan kreativitas menuju keunggulan di era digital.</p>
+    <p>Pusat pengembangan potensi santri yang mengakselerasi bakat dan kreativitas menuju keunggulan di era digital.</p>
   </header>
 
   <section id="digitalisasi">
@@ -436,12 +439,12 @@ h2 {
     <div class="digitalisasi-container">
   <a href="https://darulfalah.id/ra-mi/" class="digitalisasi-card bg-digitalisasi-1">
     <div class="overlay">
-      <h3>Kelas Digtial Pondok Pesantren Darul Falah</h3>
+      <h3>Kelas Digitial Pondok Pesantren Darul Falah</h3>
       <p>Belajar pakai laptop, proyektor, dan tablet? Sudah biasa bagi santri zaman now mahir teknologi, tetap berakar pada nilai-nilai pesantren.</p>
     </div>
   </a>
 
-  <a href="https://darulfalah.id/mts/" class="digitalisasi-card bg-digitalisasi-2">
+  <a href="https://sis.darulfalah.id/auth/login" class="digitalisasi-card bg-digitalisasi-2">
     <div class="overlay">
       <h3>Administrasi Berbasis Data</h3>
       <p>Pengelolaan data santri dan administrasi pondok mulai menggunakan sistem komputerisasi untuk meningkatkan efisiensi dan akurasi.</p>
@@ -456,61 +459,25 @@ h2 {
   </a>
 </div>     
 </section>
-
-  <section id="bintang Kreasi Santri">
-    <h2 style="background-color: rgb(156, 162, 165);">Bintang Kreasi Santri</h2>
-    <div class="bintangKreasiSantri-container">
-      <div class="bintangKreasiSantri-card bg-bintangKreasiSantri-1">
-            <div class="overlay">
-                <h3>Sports</h3>
-                <p>Competitive teams and fitness activities</p>
-                <a href="#">Explore</a>
-            </div>
-        </div>
-        <div class="bintangKreasiSantri-card bg-bintangKreasiSantri-2">
-            <div class="overlay">
-                <h3>Arts</h3>
-                <p>Music, drama, visual arts and more</p>
-                <a href="#">Explore</a>
-            </div>
-        </div>
-
-        <!-- Row 2 -->
-        <div class="bintangKreasiSantri-card bg-bintangKreasiSantri-3">
-            <div class="overlay">
-                <h3>Science</h3>
-                <p>STEM clubs and academic competitions</p>
-                <a href="#">Explore</a>
-            </div>
-        </div>  
-  </section>
  <section id="kontak">
   <h2>Kontak Kami</h2>
   
   <div class="contact-container">
     <div class="contact-item">
-      <i class="fas fa-phone"></i>
-      <span>0352752941</span>
-    </div>
-    <div class="contact-item">
       <i class="fas fa-fax"></i>
-      <span>info@darulfalah.id</span>
-    </div>
-    <div class="contact-item">
-      <i class="fas fa-envelope"></i>
-      <span>darulfalah_sukorejo@ymail.com</span>
+      <span><a href="https://darulfalah.id/" target="_blank">darulfalah.id</a></span>
     </div>
     <div class="contact-item">
       <i class="fab fa-whatsapp"></i>
-      <span><a href="https://wa.me/6281234567890" target="_blank">WhatsApp</a></span>
+      <span><a href="https://wa.me/62895424359292" target="_blank">WhatsApp</a></span>
     </div>
     <div class="contact-item">
       <i class="fab fa-instagram"></i>
-      <span><a href="https://instagram.com/username" target="_blank">Instagram</a></span>
+      <span><a href="https://www.instagram.com/darulfalahsukorejo?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank">Instagram</a></span>
     </div>
     <div class="contact-item">
       <i class="fab fa-facebook-f"></i>
-      <span><a href="https://facebook.com/username" target="_blank">Facebook</a></span>
+      <span><a href="https://www.facebook.com/profile.php?id=100024499846124&locale=id_ID" target="_blank">Facebook</a></span>
     </div>
   </div>
 </section>
